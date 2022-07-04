@@ -19,10 +19,8 @@ namespace TwelveDataWriterLib
 
         public void StartTimer()
         {
-            Console.WriteLine("init timer");
             // Create a timer with a one minute interval.
             aTimer = new Timer(60000);
-            Console.WriteLine("started timer");
             //Starting the request sequense
             aTimer.Elapsed += new ElapsedEventHandler(OnTimedEvent);
             aTimer.AutoReset = true;
